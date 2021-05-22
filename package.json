@@ -1,0 +1,27 @@
+{
+  "name": "code-challenge5",
+  "version": "1.0.0",
+  "description": "**Topic** | **Link** ----- | ----- **CODE CHALLENGE 1** | [Reversed-Array](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge1/reverseArray.md)  **CODE CHALLENGE 2** | [Array-Shift](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge2/shiftArray.md)  **CODE CHALLENGE 3** | [Array-Binary-Search](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge3/arrayBinarySearch.md)  **CODE CHALLENGE 5** | [Linked-lists](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge5/linked-lists.md)",
+  "main": "LL.js",
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farahalwahaibi/data-structures-and-algorithms-401.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farahalwahaibi/data-structures-and-algorithms-401/issues"
+  },
+  "homepage": "https://github.com/farahalwahaibi/data-structures-and-algorithms-401#readme",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "supertest": "^6.1.3"
+  },
+  "dependencies": {
+    "@jest/globals": "^26.6.2"
+  }
+}
