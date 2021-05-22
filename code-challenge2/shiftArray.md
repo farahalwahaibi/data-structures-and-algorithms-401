@@ -1,8 +1,8 @@
 ## CODE CHALLENGE ONE : SHIFT ARRAY
 
-[SHIFT ARRAY CODE](https://replit.com/@FarahWahaibi/SkinnyCircularExpertise#index.js)
+[SHIFT ARRAY CODE](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge2/shiftArray.js)
 
-[SHIFT ARRAY TEST CODE](https://replit.com/@FarahWahaibi/SkinnyCircularExpertise#index.js)
+[SHIFT ARRAY TEST CODE](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge2/__test__/shiftArray.test.js)
 
 ![shift-array](1.jpeg)
 
