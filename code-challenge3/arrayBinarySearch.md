@@ -1,8 +1,8 @@
 ## CODE CHALLENGE THREE : Array Binary Search
 
-[Array Binary Search CODE](https://replit.com/@FarahWahaibi/Array-Binary-Search#script.js)
+[Array Binary Search CODE](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge3/arrayBinarySearch.js)
 
-[Array Binary Search Test CODE](https://replit.com/@FarahWahaibi/Array-Binary-Search#script.js)
+[Array Binary Search Test CODE](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge3/__test__/arrayBinarySearch.test.js)
 
 ![Array-Binary-Search](1.jpeg)
 
