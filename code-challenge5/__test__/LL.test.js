@@ -88,6 +88,80 @@ describe ( 'LinkedList', ()=>{
     //assert
     expect( test ).toEqual( '{a} ->{b} ->{c} ->NULL' );
   } );
+
+  //test if add to the end
+  it( 'should successfully add a node to the end',() => {
+    //arrange
+    let ll = new LinkedList();
+    let val = 10;
+    //act
+    ll.append( val );
+    //assert
+    expect( ll.head.next.value ).toEqual( val );
+  } );
+
+  //test if add multiple nodes to the end
+  it( 'should successfully add multiple nodes to the end',() => {
+    //arrange
+    let ll = new LinkedList();
+    let value1 = 10;
+    let value2 = 11;
+    //act
+    ll.append( value1 );
+    ll.append( value2 );
+    //assert
+    expect( ll.head.next.value ).toEqual( value2 );
+  } );
+
+  //test if insert a node before a node located
+  it( 'should successfully insert a node before a node located',() => {
+    //arrange
+    let ll = new LinkedList();
+    ll.insert( 1 );
+    ll.insert( 2 );
+    ll.insert( 3 );
+    ll.insert( 4 );
+    //act
+    ll.insertBefore( 3,5 );
+    //assert
+    expect( ll.head.next.value ).toEqual( 5 );
+  } );
+
+  //test if successfully insert a node before the first node
+  it( 'should successfully insert a node before the first node',() => {
+    //arrange
+    let ll = new LinkedList();
+    ll.insert( 6 );
+    //act
+    ll.insertBefore( 6,7 );
+    //assert
+    expect( ll.head.value ).toEqual( 7 );
+  } );
+
+  //test if successfully insert after a node in the middle
+  it( 'should successfully insert after a node in the middle',() => {
+    //arrange
+    let ll = new LinkedList();
+    ll.insert( 1 );
+    ll.insert( 2 );
+    ll.insert( 3 );
+    //act
+    ll.insertAfter( 2,4 );
+    //assert
+    expect( ll.head.next.value ).toEqual( 4 );
+  } );
+
+  //test if successfully insert a node after the last node 
+  it( 'should successfully insert a node after the last node',() => {
+    //arrange
+    let ll = new LinkedList();
+    ll.insert( 1 );
+    ll.insert( 2 );
+    //act
+    ll.insertAfter( 1,3 );
+    //assert
+    expect( ll.head.next.next.value ).toEqual( 3 );
+  } );
   
 } );
 
