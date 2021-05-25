@@ -8,4 +8,9 @@
 
 [Node Test](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge5/__test__/node.test.js)
 
+
+### **White Board for linked list : kth-from-end**
+![white-board](2.png)
+
+
 ![linked-lists-test](1.JPG)

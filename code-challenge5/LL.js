@@ -80,7 +80,7 @@ class LinkedList {
 
   // insertBefore method which add a new node with the given newValue immediately before the first value node
   insertBefore( currentVal, value ){
-    if( !currentVal,value ){
+    if( !currentVal && value ){
       throw new Error( 'insert value' );
     }
     let node = new Node( value );
@@ -105,7 +105,7 @@ class LinkedList {
 
   // insertAfter method which add a new node with the given newValue immediately after the first value node
   insertAfter( currentVal, value ){
-    if( !currentVal,value ){
+    if( !currentVal && value ){
       throw new Error( 'insert value' );
     }
     let node = new Node( value );
@@ -123,6 +123,29 @@ class LinkedList {
       }
       throw new Error( 'Exception' );
     }
+  }
+
+  llkthFromEnd( k ){
+    if( k===null||k<0 ){
+      throw new Error( 'You did not insert any value or the value is negative !!!' );
+    }
+    let temp = this.head;
+    let length = 0;
+    while( temp !== null ){
+      temp = temp.next;
+      length++;
+    }
+    console.log( length );
+    if( k>length-1 ){
+      throw new Error( 'k is greater than length of linkedlist ' );
+    }
+    let distance = length-k-1;
+    temp = this.head;
+    while( distance !== 0 ){
+      temp = temp.next;
+      distance--;
+    }
+    return temp;
   }
 }
 

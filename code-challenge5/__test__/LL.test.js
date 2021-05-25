@@ -151,7 +151,7 @@ describe ( 'LinkedList', ()=>{
     expect( ll.head.next.value ).toEqual( 4 );
   } );
 
-  //test if successfully insert a node after the last node 
+  //test if successfully insert a node after the last node
   it( 'should successfully insert a node after the last node',() => {
     //arrange
     let ll = new LinkedList();
@@ -162,6 +162,6 @@ describe ( 'LinkedList', ()=>{
     //assert
     expect( ll.head.next.next.value ).toEqual( 3 );
   } );
-  
+
 } );
 
