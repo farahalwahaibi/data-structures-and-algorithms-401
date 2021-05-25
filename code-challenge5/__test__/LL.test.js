@@ -94,6 +94,7 @@ describe ( 'LinkedList', ()=>{
     //arrange
     let ll = new LinkedList();
     let val = 10;
+    ll.insert( 1 );
     //act
     ll.append( val );
     //assert
@@ -107,6 +108,7 @@ describe ( 'LinkedList', ()=>{
     let value1 = 10;
     let value2 = 11;
     //act
+    ll.insert( 1 );
     ll.append( value1 );
     ll.append( value2 );
     //assert
@@ -148,7 +150,7 @@ describe ( 'LinkedList', ()=>{
     //act
     ll.insertAfter( 2,4 );
     //assert
-    expect( ll.head.next.value ).toEqual( 4 );
+    expect( ll.head.next.next.value ).toEqual( 4 );
   } );
 
   //test if successfully insert a node after the last node
@@ -161,6 +163,78 @@ describe ( 'LinkedList', ()=>{
     ll.insertAfter( 1,3 );
     //assert
     expect( ll.head.next.next.value ).toEqual( 3 );
+  } );
+
+  //test Where k is greater than the length of the linked list
+  it( 'should return error when k is greater linked list',() => {
+    //arrange
+    let ll = new LinkedList();
+    ll.insert( 5 );
+    ll.insert( 6 );
+    ll.insert( 7 );
+    //act
+    function notFound(){
+      ll.llkthFromEnd( 8 );
+    }
+    //assert
+    expect( notFound ).toThrow();
+  } );
+
+  //test Where k and the length of the list are the same
+  it( 'should return false if the k equal the length of linked list',() => {
+    //arrange
+    let ll = new LinkedList();
+    ll.insert( 5 );
+    ll.insert( 6 );
+    ll.insert( 7 );
+    ll.insert( 8 );
+    //act
+    function notFound(){
+      ll.llkthFromEnd( 8 );
+    }
+    //assert
+    expect( notFound ).toThrow();
+  } );
+
+  //test Where k is not a positive integer
+  it( 'should return error when the k is not a positive integer' ,() => {
+    //arrange
+    let ll = new LinkedList();
+    ll.insert( 1 );
+    ll.insert( 2 );
+    ll.insert( 3 );
+    //act
+    function notFound(){
+      let x = ll.llkthFromEnd( -1 );
+      console.log( 'negative',x );
+    }
+    //assert
+    expect( notFound ).toThrow();
+  } );
+
+  //test Where the linked list is of a size 1
+  it( 'should test if the length of the linked list is of a size 1',() => {
+    //arrange
+    let ll = new LinkedList();
+    ll.insert( 1 );
+    //act
+    let value = ll.llkthFromEnd( 0 );
+    //assert
+    expect( value.value ).toEqual( 1 );
+  } );
+
+  //test if Happy Path” where k is not at the end, but somewhere in the middle of the linked list
+  it( 'should return the value except the end or the beginning',() => {
+    //arrange
+    let ll = new LinkedList();
+    ll.insert( 1 );
+    ll.insert( 2 );
+    ll.insert( 3 );
+    ll.insert( 4 );
+    //act
+    let value =  ll.llkthFromEnd( 2 );
+    //assert
+    expect( value.value ).toEqual( 2 );
   } );
 
 } );

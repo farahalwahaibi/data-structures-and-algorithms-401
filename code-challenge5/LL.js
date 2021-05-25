@@ -125,27 +125,34 @@ class LinkedList {
     }
   }
 
+  //Return the node’s value that is k from the end of the linked list.
   llkthFromEnd( k ){
+    // check if k === null or < than 0
     if( k===null||k<0 ){
-      throw new Error( 'You did not insert any value or the value is negative !!!' );
+      throw new Error( 'please insert k !!!' );
     }
-    let temp = this.head;
+
+    let current = this.head;
     let length = 0;
-    while( temp !== null ){
-      temp = temp.next;
+    // check if current node not null
+    while( current !== null ){
+      current = current.next;
       length++;
     }
-    console.log( length );
+
+    // check if k greater than length - 1
     if( k>length-1 ){
-      throw new Error( 'k is greater than length of linkedlist ' );
+      throw new Error( 'k > length' );
     }
+    // declare distance 
     let distance = length-k-1;
-    temp = this.head;
+    current = this.head;
     while( distance !== 0 ){
-      temp = temp.next;
+      current = current.next;
       distance--;
     }
-    return temp;
+    //return current
+    return current;
   }
 }
 
