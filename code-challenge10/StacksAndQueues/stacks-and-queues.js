@@ -15,6 +15,8 @@ class Stack {
     this.length=0;
   }
 
+
+
   //push method
   push ( value ){
     let node = new Node ( value );
@@ -37,9 +39,10 @@ class Stack {
       throw new Error ( 'empty stack' );
     }
     else {
+      let node = this.top.value;
       this.top = this.top.next ;
       this.length = this.length-1;
-      return this ;
+      return node ;
     }
   }
 
