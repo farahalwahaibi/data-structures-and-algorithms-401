@@ -12,6 +12,7 @@ class Node {
 class Stack {
   constructor (){
     this.top = null;
+    this.length = 0 ;
   }
 
   //push method
@@ -33,11 +34,12 @@ class Stack {
   pop () {
     //Should raise exception when called on empty stack
     if ( this.top===null ){
-      throw new Error ( 'empty stack' );
+      console.log ( 'empty stack' );
     }
     else {
       let node = this.top.value ;
       this.top = this.top.next ;
+      this.length = this.length-1;
       return node ;
     }
   }
