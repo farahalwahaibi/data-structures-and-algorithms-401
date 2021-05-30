@@ -1,18 +1,18 @@
 'use strict';
 
-// // create class for node
-// class Node {
-//   constructor ( value ){
-//     this.value = value ;
-//     this.next = null ;
-//   }
-// }
+// create class for node
+class Node {
+  constructor ( value ){
+    this.value = value ;
+    this.next = null ;
+  }
+}
 
-const Node = require ('../../code-challenge5/node.js')
 // stack class
 class Stack {
   constructor (){
     this.top = null;
+    this.length=0;
   }
 
   //push method
@@ -37,9 +37,9 @@ class Stack {
       throw new Error ( 'empty stack' );
     }
     else {
-      let node = this.top.value ;
       this.top = this.top.next ;
-      return node ;
+      this.length = this.length-1;
+      return this ;
     }
   }
 
@@ -66,62 +66,62 @@ class Stack {
 }
 
 
-// // Queue class
-// class Queue {
-//   constructor () {
-//     this.front = null ;
-//   }
+// Queue class
+class Queue {
+  constructor () {
+    this.front = null ;
+  }
 
-//   //enqueue method
-//   enqueue( value ) {
-//     let node = new Node ( value );
-//     if ( this.front === null ){
-//       this.front = node ;
-//     }
-//     else {
-//       let currentVal = this.front;
-//       while( currentVal.next ){
-//         currentVal = currentVal.next ;
-//       }
-//       currentVal.next = node ;
-//     }
-//     return node ;
-//   }
+  //enqueue method
+  enqueue( value ) {
+    let node = new Node ( value );
+    if ( this.front === null ){
+      this.front = node ;
+    }
+    else {
+      let currentVal = this.front;
+      while( currentVal.next ){
+        currentVal = currentVal.next ;
+      }
+      currentVal.next = node ;
+    }
+    return node ;
+  }
 
-//   //dequeue method
-//   dequeue () {
-//     //Should raise exception when called on empty queue
-//     if ( !this.front ){
-//       throw new Error ( 'empty queue' );
-//     }
-//     else {
-//       let node = this.front ;
-//       this.front = this.front.next ;
-//       return node.value ;
-//     }
-//   }
+  //dequeue method
+  dequeue () {
+    //Should raise exception when called on empty queue
+    if ( !this.front ){
+      throw new Error ( 'empty queue' );
+    }
+    else {
+      let node = this.front ;
+      this.front = this.front.next ;
+      return node.value ;
+    }
+  }
 
-//   //peek method
-//   peek () {
-//     //Should raise exception when called on empty queue
-//     if ( !this.front ){
-//       throw new Error ( 'empty queue' );
-//     }
-//     else {
-//       return this.front.value ;
-//     }
-//   }
+  //peek method
+  peek () {
+    //Should raise exception when called on empty queue
+    if ( !this.front ){
+      throw new Error ( 'empty queue' );
+    }
+    else {
+      return this.front.value ;
+    }
+  }
 
-//   //isEmpty method
-//   isEmpty () {
-//     if ( this.front ){
-//       return false;
-//     }
-//     else{
-//       return true ;
-//     }
-//   }
-// }
+  //isEmpty method
+  isEmpty () {
+    if ( this.front ){
+      return false;
+    }
+    else{
+      return true ;
+    }
+  }
+}
 
 
 module.exports = Stack ;
