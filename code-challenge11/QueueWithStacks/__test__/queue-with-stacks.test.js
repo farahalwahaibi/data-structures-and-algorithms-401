@@ -45,6 +45,6 @@ describe ( 'stack with queue', ()=>{
     //act
     pseudoQueue.dequeue();
     //assert
-    expect( pseudoQueue.secondStack.top ).toBe( null );
+    expect( pseudoQueue.secondStack.top ).toBe( null);
   } );
 } );
