@@ -12,7 +12,7 @@
 
 [multi-bracket-validation Code](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge13/multiBracketValidation/multi-bracket-validation.js)
 
-[multi-bracket-validation Test](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge13/multiBracketValidation/__test__/multi-bracket-validation.js)
+[multi-bracket-validation Test](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge13/multiBracketValidation/__test__/multi-bracket-validation.test.js)
 
 
 
@@ -23,6 +23,6 @@
 
 ### **Test**
 
-[multi-bracket-validation Test](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge13/multiBracketValidation/__test__/multi-bracket-validation.js)
+[multi-bracket-validation Test](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge13/multiBracketValidation/__test__/multi-bracket-validation.test.js)
 
 ![multi-bracket-validation Test]()
