@@ -7,13 +7,13 @@ let brackets = { '(':')', '{':'}', '[':']'} ;
 
 //create function multiBracketValidation which takes input as parameter
 function multiBracketValidation( input ){
-  //1st edg case function should take a string as its only argument
+  //1st edge case function should take a string as its only argument
   if ( typeof input !== 'string' ){
     throw new Error( 'please input string' );
   }
-  //2nd edg case if the input string is empty
+  //2nd edge case if the input is empty string 
   else if ( input === '' ){
-    throw new Error( 'your string input is empty' );
+    throw new Error( 'your input is empty string' );
   }
   else{
     //iterate throw the length of input
@@ -54,3 +54,4 @@ console.log( multiBracketValidation( '{[)}' ) );
 //return true
 console.log( multiBracketValidation( '{([])}' ) );
 
+module.exports = multiBracketValidation ;

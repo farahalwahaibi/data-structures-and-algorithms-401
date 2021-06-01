@@ -9,5 +9,6 @@
 **CODE CHALLENGE 10** | [stack-and-queue](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge10/stack-and-queue.md) 
 **CODE CHALLENGE 11** | [stack-with-queue](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge11/QueueWithStacks/queue-with-stacks.md) 
 **CODE CHALLENGE 12** | [fifo-animal-shelter](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge12/fifoAnimalShelter/fifo-animal-shelter.md) 
+**CODE CHALLENGE 13** | [multi-brackets-validation](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge13/multiBracketValidation/multi-bracket-validation.md) 
 
 
