@@ -68,6 +68,67 @@ class BinaryTree {
     traverse( this.root );
     return arr ;
   }
+  //find-maximum-value method
+  //assume that the values stored in the Binary Tree will be numeric.
+  finedMaximumValue(){
+    let x = this.root.value ;
+    let y = this.root.left.value ;
+    let z = this.root.right.value ;
+    //1st check if the root null
+    if ( x === null ){
+      return ( 'empty binary tree' ) ;
+    }
+    //1st check if the root have the maximum value and return it
+    if ( ( x !== null ) && ( x > y && z ) ){
+      return x ;
+    }
+    //1st check if the root.right have the maximum value and return it
+    if ( ( z !== null ) && ( z > x && y ) ){
+      x = z ;
+      return x ;
+    }
+    //check the other left node for the left
+    while( z.left ){
+      if ( z.left > z.right ){
+        x = z.left ;
+      } else {
+        x = z.right ;
+      }
+      return x ;
+    }
+    //check the other right node for the left
+    while( z.right ){
+      if ( z.right > z.left ){
+        x = z.right ;
+      } else {
+        x = z.left ;
+      }
+      return x ;
+    }
+    //1st check if the root.left have the maximum value and return it
+    if ( ( y !== null ) && ( y > x && z ) ){
+      x = y ;
+      return x ;
+    }
+    //check the other left node for the right
+    while( y.left ){
+      if ( y.left > y.right ){
+        x = y.left ;
+      } else {
+        x = y.right ;
+      }
+      return x ;
+    }
+    //check the other right node for the right
+    while( y.right ){
+      if ( y.right > y.left ){
+        x = y.right ;
+      } else {
+        x = y.left ;
+      }
+      return x ;
+    }
+  }
 }
 //BinarySearchTree class
 class BinarySearchTree {
