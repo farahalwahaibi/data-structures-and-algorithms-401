@@ -129,7 +129,48 @@ class BinaryTree {
       return x ;
     }
   }
+  //breadth-first method
+  breadthFirst ( node ){
+    //declare empty array
+    let arr = [] ;
+    let traverse = ( ( node,l )=>{
+      if ( this.root === null ){
+        return;
+      }
+      if ( l===1 ){
+        arr.push( node.value );
+      }
+      else if ( l>1 ){
+        traverse( node.left, l-1 );
+        traverse( node.right, l-1 );
+      }
+    } );
+    // iterate throw the height of the tree
+    for ( let i = 1; i <= binaryTreeHeight( node ); i++ ){
+      traverse( node,i );
+    }
+    //helper method
+    //we need to measure the height of the tree
+    let binaryTreeHeight = ( ( node )=>{
+      if ( node === null ){
+        return 0 ;
+      }
+      else {
+        let leftHeight = binaryTreeHeight( node.left );
+        let rightHeight = binaryTreeHeight( node.right );
+
+        if ( leftHeight>rightHeight ){
+          return leftHeight +1;
+        }
+        else {
+          return rightHeight +1;
+        }
+      }
+    } );
+    return arr ;
+  }
 }
+
 //BinarySearchTree class
 class BinarySearchTree {
   constructor( root = null ){

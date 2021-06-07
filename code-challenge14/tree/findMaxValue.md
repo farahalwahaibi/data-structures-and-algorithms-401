@@ -11,7 +11,7 @@
 
 
 
-### **White Board for multi-bracket-validation**
+### **White Board for Trees /find-maximum-value**
 
 ![white-board](3.png)
 
