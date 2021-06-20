@@ -1,6 +1,6 @@
 ## **CODE CHALLENGE 26 : Insertion Sort**
 
-Review the pseudocode below, then trace the algorithm by stepping through the process with the provided sample array. Document your explanation by creating a blog article that shows the step-by-step output after each iteration through some sort of visual.
+Selection Sort is a sorting algorithm that traverses the array multiple times as it slowly builds out the sorting sequence. The traversal keeps track of the minimum value and places it in the front of the array which should be incrementally sorted.
 
 ### **Pseudocode :**
 
