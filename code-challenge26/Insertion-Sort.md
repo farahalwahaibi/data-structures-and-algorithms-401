@@ -19,7 +19,7 @@ Review the pseudocode below, then trace the algorithm by stepping through the pr
 
 [Insertion-Sort Code](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge26/Insertion-Sort.js)
 
-[Insertion-Sort Test](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge26/__test__/Insertion-Sort.test.js)
+[Insertion-Sort Test](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge26/test/Insertion-Sort.test.js)
 
 
 
@@ -33,6 +33,6 @@ Review the pseudocode below, then trace the algorithm by stepping through the pr
 
 ### **Test**
 
-[Insertion-Sort Test](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge26/__test__/Insertion-Sort.test.js)
+[Insertion-Sort Test](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge26/test/Insertion-Sort.test.js)
 
 ![Insertion-Sort Test](1.JPG)
