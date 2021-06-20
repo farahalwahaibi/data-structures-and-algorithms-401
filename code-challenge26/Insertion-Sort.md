@@ -36,3 +36,5 @@ Selection Sort is a sorting algorithm that traverses the array multiple times as
 [Insertion-Sort Test](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge26/test/Insertion-Sort.test.js)
 
 ![Insertion-Sort Test](1.JPG)
+
+
