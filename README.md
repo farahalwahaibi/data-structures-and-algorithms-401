@@ -12,6 +12,7 @@
 **CODE CHALLENGE 13** | [multi-brackets-validation](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge13/multiBracketValidation/multi-bracket-validation.md) 
 **CODE CHALLENGE 14** | [Trees](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge14/tree/tree.md)
 **CODE CHALLENGE 18** | [FizzBuzz Trees](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge18/fizzBuzzTree/fizz-buzz-tree.md) 
+**CODE CHALLENGE 26** | [Insertion Sort](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge26/Insertion-Sort.md) 
 
 
 
