@@ -2,6 +2,10 @@
 
 // ALGORITHM Mergesort(arr)
 function mergeSort ( arr ) {
+  //for edge cases
+  if ( arr.length===0 ) {
+    return 'Exception';
+  }
   // DECLARE n <-- arr.length
   let n = arr.length ;
   // if n > 1
