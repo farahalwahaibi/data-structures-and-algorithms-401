@@ -18,13 +18,14 @@ describe( 'insertionSort', () => {
     expect( sortedMergedArr ).toEqual( [ 4, 8, 15, 16, 23, 42 ] );
   } );
 
-  it( 'should merge the array after sort it', () => {
+  //for edge cases
+  it( 'should return exception when the input is empty array', () => {
     //arrange
-    let num =555;
+    let arr = [];
     //act
-    let sortedMergedArr= mergeSort( num );
+    let sortedMergedArr = mergeSort( arr );
     //assert
-    expect( sortedMergedArr ).toBe( num );
+    expect( sortedMergedArr ).toEqual( 'Exception' );
   } );
 
 } );
