@@ -14,6 +14,9 @@
 **CODE CHALLENGE 18** | [FizzBuzz Trees](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge18/fizzBuzzTree/fizz-buzz-tree.md) 
 **CODE CHALLENGE 26** | [Insertion Sort](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge26/Insertion-Sort.md) 
 **CODE CHALLENGE 27** | [Merge Sort](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge27/Merge-Sort.md) 
+**CODE CHALLENGE 28** | [Quick Sort](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge28/Quick-Sort.md) 
+
+
 
 
 
