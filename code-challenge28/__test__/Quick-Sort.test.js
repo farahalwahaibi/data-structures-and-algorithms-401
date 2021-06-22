@@ -7,7 +7,7 @@ const quickSort = require( '../Quick-Sort.js' );
 
 
 //start testing
-describe( 'insertionSort', () => {
+describe( 'Quick-Sort', () => {
 
   it( 'should Quick Sort the array', () => {
     //arrange
