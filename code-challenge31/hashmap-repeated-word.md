@@ -19,7 +19,7 @@ Write a function called repeated word that finds the first word to occur more th
 
 ### **Test**
 
-![test](2.png)
+![test](2.PNG)
 
 [Hash Map Repeated Word Test](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge30/__test__/hashmap-repeated-word.test.js)
 
