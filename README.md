@@ -16,6 +16,7 @@
 **CODE CHALLENGE 27** | [Merge Sort](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge27/Merge-Sort.md) 
 **CODE CHALLENGE 28** | [Quick Sort](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge28/Quick-Sort.md) 
 **CODE CHALLENGE 30** | [Hash Table](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge30/hashtable.md) 
+**CODE CHALLENGE 31** | [Hash Map Repeated Word](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge31/hashmap-repeated-word.md) 
 
 
 
