@@ -7,7 +7,7 @@ Write a function called repeated word that finds the first word to occur more th
 
 [Hash Map Repeated Word Code](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge31/hashmap-repeated-word.js)
 
-[Hash Map Repeated Word Test](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge30/__test__/hashmap-repeated-word.test.js)
+[Hash Map Repeated Word Test](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge31/__test__/hashmap-repeated-word.test.js)
 
 
 
@@ -21,5 +21,5 @@ Write a function called repeated word that finds the first word to occur more th
 
 ![test](2.png)
 
-[Hash Map Repeated Word Test](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge30/__test__/hashmap-repeated-word.test.js)
+[Hash Map Repeated Word Test](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge31/__test__/hashmap-repeated-word.test.js)
 
