@@ -11,7 +11,7 @@ Write a function called repeated word that finds the first word to occur more th
 
 
 
-### **White Board for Insertion Sort**
+### **White Board for Hash Map Repeated Word**
 
 ![white-board](1.png)
 
