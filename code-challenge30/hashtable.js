@@ -53,37 +53,41 @@ class HashTable{
   //hash method
   hash( key ){
     let hash = 0;
-    hash = key.split( '' ).reduce( ( acc,items ) => {
-      return acc + items.charCodeAt( 0 );
-    },0 ) * 599 % this.size;
-    return hash;
+    for ( let i = 0; i < key.length; i++ ) {
+      hash += key.charCodeAt( i );
+    }
+    return hash % this.table.length;
   }
 
   //add method
   add( key,value ){
-    let hash = this.hash( key );
-    if( !this.table[hash] ){
-      this.table[hash] = new LinkedList();
+    const hash = this.hash( key );
+    if ( this.table[hash] ) {
+      for ( let i = 0; i < this.table[hash].length; i++ ) {
+        if ( this.table[hash][i][0] === key ) {
+          this.table[hash][i][1] = value;
+          return;
+        }
+      }
+      this.table[hash].push( [key, value] );
+    } else {
+      this.table[hash] = [];
+      this.table[hash].push( [key, value] );
     }
-    let keyValuePair = {[key]:value};
-    this.table[hash].add( keyValuePair );
+    this.size++;
   }
 
   //get method
-  get( key ){
-    let newArr = [];
-    let hash = this.hash( key );
-    if( this.table[hash] ){
-      this.table.map( ( obj ) => {
-        let existObj = obj.head.value;
-        if( Object.keys( existObj ) === key ){
-          newArr.push( Object.values( existObj ) );
-          return Object.values( existObj );
+  get( key ) {
+    const hash = this.hash( key );
+    if ( this.table[hash] ) {
+      for ( let i = 0; i < this.table.length; i++ ) {
+        if ( this.table[hash][i][0] === key ) {
+          return this.table[hash][i][1];
         }
-        else return 'the key is not exist';
-      } );
+      }
     }
-    return newArr;
+    return undefined;
   }
 
   //contain method
