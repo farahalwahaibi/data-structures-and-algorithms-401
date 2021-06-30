@@ -37,5 +37,6 @@ A hash table (often called a hash map) is a data structure that maps keys to val
 
 ![test](1.PNG)
 
-[Quick-Sort Test](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge30/__test__/hashtable.test.js)
+[Hash Table Test](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge30/__test__/hashtable.test.js)
+
 
