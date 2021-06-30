@@ -36,7 +36,7 @@ describe( 'hashtable test', () => {
     //act
     newVal.add( 'Saja', 'Designer' );
     //assert
-    expect( newVal.get( 'Batoul' ) ).toBeNull();
+    expect( newVal.contains( 'nul' ) ).toBeNull();
   } );
 
   //test for handle collision
@@ -61,7 +61,7 @@ describe( 'hashtable test', () => {
     //assert
     expect( newVal.hash( 'farah' ) ).toEqual( 0 );
     expect( newVal.hash( 'rahaf' ) ).toEqual( 0 );
-    expect( newVal.get( 'rahaf' ) ).toEqual( 'Designer' );
+    expect( newVal.get( 'farah' ) ).toEqual( 'Arch' );
   } );
 
   //test for hash
