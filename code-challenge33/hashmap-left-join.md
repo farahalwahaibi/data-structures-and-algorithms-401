@@ -23,7 +23,7 @@
 
 ### **White Board for Hash Map Left Join**
 
-![white-board](1.png)
+![white-board](1.PNG)
 
 
 
