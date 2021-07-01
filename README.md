@@ -18,6 +18,8 @@
 **CODE CHALLENGE 30** | [Hash Table](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge30/hashtable.md) 
 **CODE CHALLENGE 31** | [Hash Map Repeated Word](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge31/hashmap-repeated-word.md) 
 **CODE CHALLENGE 32** | [Hash Map Tree Intersection](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge32/hashmap-tree-intersection.md) 
+**CODE CHALLENGE 33** | [Hash Map Left Join](https://github.com/farahalwahaibi/data-structures-and-algorithms-401/blob/main/code-challenge33/hashmap-left-join.md) 
+
 
 
 
